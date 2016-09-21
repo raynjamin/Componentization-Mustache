@@ -1,0 +1,12 @@
+<div>
+    <h1>Featured</h1>
+    <video src="something.mov"></video>
+
+    {{^relatedVideos.isEmpty}}
+        <ul>
+            {{#relatedVideos}}
+                {{> partials/video-list-item}}
+            {{/relatedVideos}}
+        </ul>
+    {{/relatedVideos.isEmpty}}
+</div>
